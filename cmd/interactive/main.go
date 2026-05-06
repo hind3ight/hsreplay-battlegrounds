@@ -5,12 +5,29 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"log"
 	"os"
 	"path/filepath"
 	"sort"
 	"strings"
 	"time"
 )
+
+func getCWD() string {
+	cwd, _ := os.Getwd()
+	return cwd
+}
+
+func getExeDir() string {
+	exe, err := os.Executable()
+	if err != nil {
+		return "unknown"
+	}
+	dir, _ := filepath.Split(exe)
+	return dir
+}
+
+var debugMode bool
 
 // resolveDataFile 尝试在多个位置查找 data/ 目录：
 // 1. 当前工作目录 (data/xxx)
@@ -22,8 +39,17 @@ func resolveDataFile(name string) (string, error) {
 		filepath.Join("..", name),         // 相对 bin/
 		filepath.Join("..", "..", name),   // 相对 cmd/interactive/
 	}
+	if debugMode {
+		log.Printf("[DEBUG] resolveDataFile(%q) cwd=%s", name, getCWD())
+	}
 	for _, p := range paths {
+		if debugMode {
+			log.Printf("[DEBUG]   trying: %q", p)
+		}
 		if _, err := os.Stat(p); err == nil {
+			if debugMode {
+				log.Printf("[DEBUG]   FOUND: %q", p)
+			}
 			return p, nil
 		}
 	}
@@ -166,8 +192,18 @@ func selectTribes() []string {
 
 	// 如果环境变量无效，交互式读取
 	if len(indices) != 5 {
+		if debugMode {
+			log.Printf("[DEBUG] stdin unavailable via env, reading from scanner...")
+		}
 		scanner := bufio.NewScanner(os.Stdin)
-		scanner.Scan()
+		ok := scanner.Scan()
+		if debugMode {
+			if !ok {
+				log.Printf("[DEBUG] scanner.Scan() returned false, err=%v", scanner.Err())
+			} else {
+				log.Printf("[DEBUG] scanner.Scan() got: %q", scanner.Text())
+			}
+		}
 		input := scanner.Text()
 
 		for _, s := range strings.Fields(input) {
@@ -406,12 +442,26 @@ func main() {
 	)
 
 	outputDir := flag.String("o", defaultOutputDir, "输出目录")
+	flag.BoolVar(&debugMode, "debug", false, "启用调试模式")
 	flag.Parse()
+
+	if debugMode {
+		log.SetOutput(os.Stderr)
+		log.SetFlags(log.Lmicroseconds | log.Lshortfile)
+		log.Println("[DEBUG] === 启动参数 ===")
+		log.Printf("[DEBUG] output-dir: %s", *outputDir)
+		log.Printf("[DEBUG] cwd: %s", getCWD())
+		log.Printf("[DEBUG] executable: %s", getExeDir())
+	}
 
 	data, zhNames, err := loadData()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error loading data: %v\n", err)
 		os.Exit(1)
+	}
+	if debugMode {
+		log.Printf("[DEBUG] loadData OK: %d comps, %d zhNames", len(data.Comps), len(zhNames))
+		log.Printf("[DEBUG] calling selectTribes()...")
 	}
 
 	selectedTribes := selectTribes()
