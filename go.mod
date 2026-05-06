@@ -1,6 +1,6 @@
 module github.com/hind3ight/hsreplay-battlegrounds
 
-go 1.26.1
+go 1.22
 
 require github.com/playwright-community/playwright-go v0.5700.1
 
