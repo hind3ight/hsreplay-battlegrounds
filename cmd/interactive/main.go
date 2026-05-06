@@ -154,7 +154,7 @@ func selectTribes() []string {
 
 	if len(indices) != 5 {
 		fmt.Printf("\n错误: 必须选择5个种族，你选择了 %d 个\n\n", len(indices))
-		return selectTribes()
+		os.Exit(1)
 	}
 
 	sort.Ints(indices)

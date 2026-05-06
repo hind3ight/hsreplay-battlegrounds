@@ -75,41 +75,54 @@ func (f *PlaywrightFetcher) FetchCompList(ctx context.Context) ([]RawCompSummary
 	f.page.WaitForTimeout(2000)
 
 	result, err := f.page.Evaluate(`() => {
-		const comps = [];
+		const results = [];
 		const seen = new Set();
 		const baseUrl = 'https://hsreplay.net';
-		
-		document.querySelectorAll('main a[href*="/battlegrounds/comps/"]').forEach(a => {
-			const href = a.getAttribute('href');
-			const parts = href.split('/').filter(Boolean);
-			
-			if (parts.length >= 4 && /^\d+$/.test(parts[2])) {
-				const id = parseInt(parts[2]);
-				if (seen.has(id)) return;
-				seen.add(id);
-				
-				const slug = parts[3];
-				const name = slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-				const fullText = a.textContent.replace(/\s+/g, ' ').trim();
-				
-				const diffMatch = fullText.match(/(Easy|Medium|Hard)\s*$/);
-				const difficulty = diffMatch ? diffMatch[1] : '';
-				
-				let description = fullText.replace(/BG[\w_]+\s+\d+\s+\d+\s+Tier/gi, '');
-				description = description.replace(/(Easy|Medium|Hard)$/g, '').trim();
-				
-				const compNameMatch = name.replace(/-/g, ' ');
-				description = description.replace(new RegExp('^' + compNameMatch + '\\s*', 'i'), '');
-				description = description.replace(/\s+/g, ' ').trim();
-				
-				const fullUrl = baseUrl + (href.startsWith('/') ? href : '/' + href);
-				
-				if (id && name) {
-					comps.push({ id, name, description, difficulty, url: fullUrl });
+
+		// Try multiple selectors to find comp links
+		const selectors = [
+			'main a[href*="/battlegrounds/comps/"]',
+			'a[href*="/battlegrounds/comps/"]',
+			'.comp-card a[href*="/battlegrounds/comps/"]',
+			'.comps-list a[href*="/battlegrounds/comps/"]',
+		];
+
+		for (const sel of selectors) {
+			document.querySelectorAll(sel).forEach(a => {
+				const href = a.getAttribute('href');
+				if (!href) return;
+				const parts = href.split('/').filter(Boolean);
+
+				if (parts.length >= 4 && /^\d+$/.test(parts[2])) {
+					const id = parseInt(parts[2]);
+					if (seen.has(id)) return;
+					seen.add(id);
+
+					const slug = parts[3];
+					const name = slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+					const fullText = (a.textContent || '').replace(/\s+/g, ' ').trim();
+
+					const diffMatch = fullText.match(/(Easy|Medium|Hard)\s*$/);
+					const difficulty = diffMatch ? diffMatch[1] : '';
+
+					let description = fullText.replace(/BG[\w_]+\s+\d+\s+\d+\s+Tier/gi, '');
+					description = description.replace(/(Easy|Medium|Hard)$/g, '').trim();
+
+					const compNameMatch = name.replace(/-/g, ' ');
+					description = description.replace(new RegExp('^' + compNameMatch + '\\s*', 'i'), '');
+					description = description.replace(/\s+/g, ' ').trim();
+
+					const fullUrl = baseUrl + (href.startsWith('/') ? href : '/' + href);
+
+					if (id && name) {
+						results.push({ id, name, description, difficulty, url: fullUrl });
+					}
 				}
-			}
-		});
-		return JSON.stringify(comps);
+			});
+			if (results.length > 0) break;
+		}
+
+		return JSON.stringify(results);
 	}`)
 	if err != nil {
 		return nil, fmt.Errorf("failed to evaluate JS: %w", err)
