@@ -1,0 +1,1426 @@
+{
+  "generated_at": "2025-05-06",
+  "source": "minions_metadata.json analysis",
+  "total_minions": 86,
+  "minions": {
+    "Brann Bronzebeard": {
+      "name": "Brann Bronzebeard",
+      "name_cn": "恐龙大师布莱恩",
+      "tribe": "Quilboar",
+      "tier": 2,
+      "comp_count": 7,
+      "comps": [
+        "Demons - Shop Buff",
+        "Elementals - Shop Buff/Spells",
+        "Murlocs - APM",
+        "Murlocs - Venom Scam",
+        "Pirates - Bounty APM",
+        "Quilboar - Darkgaze",
+        "Quilboar - Smuggler"
+      ],
+      "tribes_seen": [
+        "Demon",
+        "Elemental",
+        "Murloc",
+        "Pirate",
+        "Quilboar"
+      ],
+      "tribe_diversity": 5,
+      "tags": [
+        "cross_tribe",
+        "spell_scaling"
+      ]
+    },
+    "Titus Rivendare": {
+      "name": "Titus Rivendare",
+      "name_cn": "提克特斯",
+      "tribe": "Quilboar",
+      "tier": 5,
+      "comp_count": 5,
+      "comps": [
+        "Beasts - Summons",
+        "Elementals - Shop Buff/Spells",
+        "Mechs - Automaton",
+        "Quilboar - Smuggler",
+        "Undead - Attack Scaling"
+      ],
+      "tribes_seen": [
+        "Beast",
+        "Elemental",
+        "Mech",
+        "Quilboar",
+        "Undead"
+      ],
+      "tribe_diversity": 5,
+      "tags": [
+        "high_tier",
+        "cross_tribe",
+        "spell_scaling"
+      ]
+    },
+    "Rylak Metalhead": {
+      "name": "Rylak Metalhead",
+      "name_cn": "金属者刃蛇",
+      "tribe": "Quilboar",
+      "tier": 3,
+      "comp_count": 4,
+      "comps": [
+        "Beasts - Leviathan",
+        "Demons - Shop Buff",
+        "Elementals - Shop Buff/Spells",
+        "Quilboar - Smuggler"
+      ],
+      "tribes_seen": [
+        "Beast",
+        "Demon",
+        "Elemental",
+        "Quilboar"
+      ],
+      "tribe_diversity": 4,
+      "tags": [
+        "cross_tribe",
+        "spell_scaling"
+      ]
+    },
+    "Balinda Stonehearth": {
+      "name": "Balinda Stonehearth",
+      "name_cn": "巴琳达·石火",
+      "tribe": "Elemental",
+      "tier": 6,
+      "comp_count": 3,
+      "comps": [
+        "Back to Back",
+        "Elementals - Shop Buff/Spells",
+        "Undead - Attack Scaling"
+      ],
+      "tribes_seen": [
+        "Elemental",
+        "Undead"
+      ],
+      "tribe_diversity": 2,
+      "tags": [
+        "high_tier",
+        "cross_tribe",
+        "spell_scaling"
+      ]
+    },
+    "Banana Slamma": {
+      "name": "Banana Slamma",
+      "name_cn": "香蕉毁灭者",
+      "tribe": "Beast",
+      "tier": 3,
+      "comp_count": 2,
+      "comps": [
+        "Beasts - Leviathan",
+        "Beasts - Summons"
+      ],
+      "tribes_seen": [
+        "Beast"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Batty Terrorguard": {
+      "name": "Batty Terrorguard",
+      "name_cn": "蝠翼魔",
+      "tribe": "Pirate",
+      "tier": 0,
+      "comp_count": 2,
+      "comps": [
+        "Demons - Shop Buff",
+        "Pirates - Bounty APM"
+      ],
+      "tribes_seen": [
+        "Demon",
+        "Pirate"
+      ],
+      "tribe_diversity": 2,
+      "tags": [
+        "cross_tribe"
+      ]
+    },
+    "Bile Spitter": {
+      "name": "Bile Spitter",
+      "name_cn": "吐雾者",
+      "tribe": "Murloc",
+      "tier": 2,
+      "comp_count": 2,
+      "comps": [
+        "Murlocs - APM",
+        "Murlocs - Venom Scam"
+      ],
+      "tribes_seen": [
+        "Murloc"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Blade Collector": {
+      "name": "Blade Collector",
+      "name_cn": "刃收集者",
+      "tribe": "Pirate",
+      "tier": 0,
+      "comp_count": 2,
+      "comps": [
+        "Back to Back",
+        "Pirates - Bounty APM"
+      ],
+      "tribes_seen": [
+        "Elemental",
+        "Pirate"
+      ],
+      "tribe_diversity": 2,
+      "tags": [
+        "cross_tribe",
+        "spell_scaling"
+      ]
+    },
+    "Bristlebach": {
+      "name": "Bristlebach",
+      "name_cn": "刺背野猪",
+      "tribe": "Quilboar",
+      "tier": 0,
+      "comp_count": 2,
+      "comps": [
+        "Quilboar - Darkgaze",
+        "Quilboar - Smuggler"
+      ],
+      "tribes_seen": [
+        "Quilboar"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Diremuck Forager": {
+      "name": "Diremuck Forager",
+      "name_cn": "噬雾觅食者",
+      "tribe": "Murloc",
+      "tier": 1,
+      "comp_count": 2,
+      "comps": [
+        "Murlocs - APM",
+        "Murlocs - Venom Scam"
+      ],
+      "tribes_seen": [
+        "Murloc"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Drakkari Enchanter": {
+      "name": "Drakkari Enchanter",
+      "name_cn": "达卡基尔附魔师",
+      "tribe": "Pirate",
+      "tier": 1,
+      "comp_count": 2,
+      "comps": [
+        "Back to Back",
+        "Pirates - Bounty APM"
+      ],
+      "tribes_seen": [
+        "Elemental",
+        "Pirate"
+      ],
+      "tribe_diversity": 2,
+      "tags": [
+        "cross_tribe",
+        "spell_scaling"
+      ]
+    },
+    "Forsaken Weaver": {
+      "name": "Forsaken Weaver",
+      "name_cn": "被遗忘的织雾者",
+      "tribe": "Pirate",
+      "tier": 0,
+      "comp_count": 2,
+      "comps": [
+        "Pirates - Bounty APM",
+        "Undead - Attack Scaling"
+      ],
+      "tribes_seen": [
+        "Pirate",
+        "Undead"
+      ],
+      "tribe_diversity": 2,
+      "tags": [
+        "cross_tribe"
+      ]
+    },
+    "Leeroy the Reckless": {
+      "name": "Leeroy the Reckless",
+      "name_cn": "冒失的莉莲",
+      "tribe": "Murloc",
+      "tier": 6,
+      "comp_count": 2,
+      "comps": [
+        "Mechs - Automaton",
+        "Murlocs - Venom Scam"
+      ],
+      "tribes_seen": [
+        "Mech",
+        "Murloc"
+      ],
+      "tribe_diversity": 2,
+      "tags": [
+        "high_tier",
+        "cross_tribe"
+      ]
+    },
+    "Living Azerite": {
+      "name": "Living Azerite",
+      "name_cn": "活性艾泽里特",
+      "tribe": "Elemental",
+      "tier": 6,
+      "comp_count": 2,
+      "comps": [
+        "Elementals - Shop Buff/Spells",
+        "Pirates - Bounty APM"
+      ],
+      "tribes_seen": [
+        "Elemental",
+        "Pirate"
+      ],
+      "tribe_diversity": 2,
+      "tags": [
+        "high_tier",
+        "cross_tribe",
+        "spell_scaling"
+      ]
+    },
+    "Manasaber": {
+      "name": "Manasaber",
+      "name_cn": "刃豹",
+      "tribe": "Beast",
+      "tier": 0,
+      "comp_count": 2,
+      "comps": [
+        "Beasts - Leviathan",
+        "Beasts - Summons"
+      ],
+      "tribes_seen": [
+        "Beast"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Monstrous Macaw": {
+      "name": "Monstrous Macaw",
+      "name_cn": "巨嘴鹦鹉",
+      "tribe": "Quilboar",
+      "tier": 5,
+      "comp_count": 2,
+      "comps": [
+        "Beasts - Summons",
+        "Quilboar - Smuggler"
+      ],
+      "tribes_seen": [
+        "Beast",
+        "Quilboar"
+      ],
+      "tribe_diversity": 2,
+      "tags": [
+        "high_tier",
+        "cross_tribe"
+      ]
+    },
+    "Prickly Piper": {
+      "name": "Prickly Piper",
+      "name_cn": "尖刺 piper",
+      "tribe": "Quilboar",
+      "tier": 8,
+      "comp_count": 2,
+      "comps": [
+        "Quilboar - Darkgaze",
+        "Quilboar - Smuggler"
+      ],
+      "tribes_seen": [
+        "Quilboar"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier"
+      ]
+    },
+    "Pufferquil": {
+      "name": "Pufferquil",
+      "name_cn": "刺刺鹦",
+      "tribe": "Quilboar",
+      "tier": 0,
+      "comp_count": 2,
+      "comps": [
+        "Murlocs - Venom Scam",
+        "Quilboar - Darkgaze"
+      ],
+      "tribes_seen": [
+        "Murloc",
+        "Quilboar"
+      ],
+      "tribe_diversity": 2,
+      "tags": [
+        "cross_tribe"
+      ]
+    },
+    "Sewer Lord": {
+      "name": "Sewer Lord",
+      "name_cn": "下水道之主",
+      "tribe": "Beast",
+      "tier": 4,
+      "comp_count": 2,
+      "comps": [
+        "Beasts - Leviathan",
+        "Beasts - Summons"
+      ],
+      "tribes_seen": [
+        "Beast"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "各种娜迦": {
+      "name": "各种娜迦",
+      "name_cn": null,
+      "tribe": "Naga",
+      "tier": 3,
+      "comp_count": 2,
+      "comps": [
+        "Nagas - Combat Scaling/Spell Buff",
+        "Nagas - Groundbreaker"
+      ],
+      "tribes_seen": [
+        "Naga"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "4星龙": {
+      "name": "4星龙",
+      "name_cn": null,
+      "tribe": "Dragon",
+      "tier": 4,
+      "comp_count": 1,
+      "comps": [
+        "Dragons - Spells"
+      ],
+      "tribes_seen": [
+        "Dragon"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Air Revenant": {
+      "name": "Air Revenant",
+      "name_cn": "空气亡魂",
+      "tribe": "Elemental",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Elementals - Shop Buff/Spells"
+      ],
+      "tribes_seen": [
+        "Elemental"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "spell_scaling"
+      ]
+    },
+    "Ancestral Automaton": {
+      "name": "Ancestral Automaton",
+      "name_cn": "祖先自动机",
+      "tribe": "Mech",
+      "tier": 3,
+      "comp_count": 1,
+      "comps": [
+        "Mechs - Automaton"
+      ],
+      "tribes_seen": [
+        "Mech"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Ashen Corruptor": {
+      "name": "Ashen Corruptor",
+      "name_cn": "灰烬腐化者",
+      "tribe": "Demon",
+      "tier": 6,
+      "comp_count": 1,
+      "comps": [
+        "Demons - Shop Buff"
+      ],
+      "tribes_seen": [
+        "Demon"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier"
+      ]
+    },
+    "Auto Assembler": {
+      "name": "Auto Assembler",
+      "name_cn": "自动装配器",
+      "tribe": "Mech",
+      "tier": 2,
+      "comp_count": 1,
+      "comps": [
+        "Mechs - Automaton"
+      ],
+      "tribes_seen": [
+        "Mech"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Brazen Buccaneer": {
+      "name": "Brazen Buccaneer",
+      "name_cn": "鲁莽海盗",
+      "tribe": "Pirate",
+      "tier": 4,
+      "comp_count": 1,
+      "comps": [
+        "Pirates - Bounty APM"
+      ],
+      "tribes_seen": [
+        "Pirate"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Bream Counter": {
+      "name": "Bream Counter",
+      "name_cn": "鲷鱼计数器",
+      "tribe": "Murloc",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Murlocs - APM"
+      ],
+      "tribes_seen": [
+        "Murloc"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Cataclysmic Harbinger": {
+      "name": "Cataclysmic Harbinger",
+      "name_cn": "大灾变先兆",
+      "tribe": "Elemental",
+      "tier": 6,
+      "comp_count": 1,
+      "comps": [
+        "Back to Back"
+      ],
+      "tribes_seen": [
+        "Elemental"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier",
+        "spell_scaling"
+      ]
+    },
+    "Choral Mrrrglr": {
+      "name": "Choral Mrrrglr",
+      "name_cn": "合唱鱼人",
+      "tribe": "Murloc",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Murlocs - APM"
+      ],
+      "tribes_seen": [
+        "Murloc"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Consummate Conqueror": {
+      "name": "Consummate Conqueror",
+      "name_cn": "完美征服者",
+      "tribe": "Demon",
+      "tier": 9,
+      "comp_count": 1,
+      "comps": [
+        "Demons - Shop Buff"
+      ],
+      "tribes_seen": [
+        "Demon"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier"
+      ]
+    },
+    "Cousin Errgl": {
+      "name": "Cousin Errgl",
+      "name_cn": "表亲 Errgl",
+      "tribe": "Murloc",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Murlocs - APM"
+      ],
+      "tribes_seen": [
+        "Murloc"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "DK": {
+      "name": "DK",
+      "name_cn": "死亡骑士",
+      "tribe": "Dragon",
+      "tier": 2,
+      "comp_count": 1,
+      "comps": [
+        "Dragons - Shiny Ring"
+      ],
+      "tribes_seen": [
+        "Dragon"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Darkgaze Elder": {
+      "name": "Darkgaze Elder",
+      "name_cn": "暗凝视长老",
+      "tribe": "Quilboar",
+      "tier": 6,
+      "comp_count": 1,
+      "comps": [
+        "Quilboar - Darkgaze"
+      ],
+      "tribes_seen": [
+        "Quilboar"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier"
+      ]
+    },
+    "Deadly Spore": {
+      "name": "Deadly Spore",
+      "name_cn": "致命孢子",
+      "tribe": "Murloc",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Murlocs - Venom Scam"
+      ],
+      "tribes_seen": [
+        "Murloc"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Deathly Striker": {
+      "name": "Deathly Striker",
+      "name_cn": null,
+      "tribe": "Undead",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Undead - Attack Scaling"
+      ],
+      "tribes_seen": [
+        "Undead"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Drustfallen Butcher": {
+      "name": "Drustfallen Butcher",
+      "name_cn": "坠落的屠夫",
+      "tribe": "Undead",
+      "tier": 2,
+      "comp_count": 1,
+      "comps": [
+        "Undead - Attack Scaling"
+      ],
+      "tribes_seen": [
+        "Undead"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Earthsong Shaman": {
+      "name": "Earthsong Shaman",
+      "name_cn": "大地之歌萨满",
+      "tribe": "Quilboar",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Quilboar - Darkgaze"
+      ],
+      "tribes_seen": [
+        "Quilboar"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Eternal Summoner": {
+      "name": "Eternal Summoner",
+      "name_cn": "永恒召唤师",
+      "tribe": "Undead",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Undead - Attack Scaling"
+      ],
+      "tribes_seen": [
+        "Undead"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Expert Aviator": {
+      "name": "Expert Aviator",
+      "name_cn": "王牌飞行员",
+      "tribe": "Murloc",
+      "tier": 3,
+      "comp_count": 1,
+      "comps": [
+        "Murlocs - APM"
+      ],
+      "tribes_seen": [
+        "Murloc"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Famished Felbat": {
+      "name": "Famished Felbat",
+      "name_cn": "饥饿邪蝙蝠",
+      "tribe": "Demon",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Demons - Shop Buff"
+      ],
+      "tribes_seen": [
+        "Demon"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Felfire Conjurer": {
+      "name": "Felfire Conjurer",
+      "name_cn": "邪火魔术师",
+      "tribe": "Elemental",
+      "tier": 6,
+      "comp_count": 1,
+      "comps": [
+        "Back to Back"
+      ],
+      "tribes_seen": [
+        "Elemental"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier",
+        "spell_scaling"
+      ]
+    },
+    "Fire-forged Evoker": {
+      "name": "Fire-forged Evoker",
+      "name_cn": "火铸唤醒师",
+      "tribe": "Pirate",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Pirates - Bounty APM"
+      ],
+      "tribes_seen": [
+        "Pirate"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Flaming Enforcer": {
+      "name": "Flaming Enforcer",
+      "name_cn": "烈焰执法者",
+      "tribe": "Elemental",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Elementals - Shop Buff/Spells"
+      ],
+      "tribes_seen": [
+        "Elemental"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "spell_scaling"
+      ]
+    },
+    "Friendly Geist": {
+      "name": "Friendly Geist",
+      "name_cn": "友善鬼魂",
+      "tribe": "Undead",
+      "tier": 6,
+      "comp_count": 1,
+      "comps": [
+        "Undead - Attack Scaling"
+      ],
+      "tribes_seen": [
+        "Undead"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier"
+      ]
+    },
+    "Gem Smuggler": {
+      "name": "Gem Smuggler",
+      "name_cn": "宝石走私贩",
+      "tribe": "Quilboar",
+      "tier": 4,
+      "comp_count": 1,
+      "comps": [
+        "Quilboar - Smuggler"
+      ],
+      "tribes_seen": [
+        "Quilboar"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Geomagus Roogug": {
+      "name": "Geomagus Roogug",
+      "name_cn": "地质师 Roogug",
+      "tribe": "Quilboar",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Quilboar - Darkgaze"
+      ],
+      "tribes_seen": [
+        "Quilboar"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Goldrinn": {
+      "name": "Goldrinn",
+      "name_cn": "戈德林",
+      "tribe": "Dragon",
+      "tier": 5,
+      "comp_count": 1,
+      "comps": [
+        "Dragons - Shiny Ring"
+      ],
+      "tribes_seen": [
+        "Dragon"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier"
+      ]
+    },
+    "Goldrinn, the Great Wolf": {
+      "name": "Goldrinn, the Great Wolf",
+      "name_cn": "大奖狼戈德林",
+      "tribe": "Beast",
+      "tier": 8,
+      "comp_count": 1,
+      "comps": [
+        "Beasts - Summons"
+      ],
+      "tribes_seen": [
+        "Beast"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier"
+      ]
+    },
+    "Handless Forsaken": {
+      "name": "Handless Forsaken",
+      "name_cn": "无手亡魂",
+      "tribe": "Undead",
+      "tier": 2,
+      "comp_count": 1,
+      "comps": [
+        "Undead - Attack Scaling"
+      ],
+      "tribes_seen": [
+        "Undead"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Heroic Underdog": {
+      "name": "Heroic Underdog",
+      "name_cn": "英雄 underdog",
+      "tribe": "Murloc",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Murlocs - Venom Scam"
+      ],
+      "tribes_seen": [
+        "Murloc"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Hired Ritualist": {
+      "name": "Hired Ritualist",
+      "name_cn": "雇佣仪式师",
+      "tribe": "Quilboar",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Quilboar - Darkgaze"
+      ],
+      "tribes_seen": [
+        "Quilboar"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Hunting Tiger Shark": {
+      "name": "Hunting Tiger Shark",
+      "name_cn": "猎虎鲨",
+      "tribe": "Beast",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Beasts - Leviathan"
+      ],
+      "tribes_seen": [
+        "Beast"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Kangor's Apprentice": {
+      "name": "Kangor's Apprentice",
+      "name_cn": "康格尔的学徒",
+      "tribe": "Mech",
+      "tier": 3,
+      "comp_count": 1,
+      "comps": [
+        "Mechs - Automaton"
+      ],
+      "tribes_seen": [
+        "Mech"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Laboratory Assistant": {
+      "name": "Laboratory Assistant",
+      "name_cn": "实验室助理",
+      "tribe": "Demon",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Demons - Shop Buff"
+      ],
+      "tribes_seen": [
+        "Demon"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Leyline Surfacer": {
+      "name": "Leyline Surfacer",
+      "name_cn": "地标冲浪者",
+      "tribe": "Elemental",
+      "tier": 4,
+      "comp_count": 1,
+      "comps": [
+        "Elementals - Shop Buff/Spells"
+      ],
+      "tribes_seen": [
+        "Elemental"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "spell_scaling"
+      ]
+    },
+    "Lurking Leviathan": {
+      "name": "Lurking Leviathan",
+      "name_cn": "潜伏的利维坦",
+      "tribe": "Beast",
+      "tier": 3,
+      "comp_count": 1,
+      "comps": [
+        "Beasts - Leviathan"
+      ],
+      "tribes_seen": [
+        "Beast"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Magicfin Mycologist": {
+      "name": "Magicfin Mycologist",
+      "name_cn": "魔鳍真菌师",
+      "tribe": "Murloc",
+      "tier": 4,
+      "comp_count": 1,
+      "comps": [
+        "Murlocs - APM"
+      ],
+      "tribes_seen": [
+        "Murloc"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Malchezaar, Prince of Dance": {
+      "name": "Malchezaar, Prince of Dance",
+      "name_cn": "舞者玛洛扎",
+      "tribe": "Demon",
+      "tier": 5,
+      "comp_count": 1,
+      "comps": [
+        "Demons - Shop Buff"
+      ],
+      "tribes_seen": [
+        "Demon"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier"
+      ]
+    },
+    "Moon-Bacon Jazzer": {
+      "name": "Moon-Bacon Jazzer",
+      "name_cn": "月亮培根爵士",
+      "tribe": "Quilboar",
+      "tier": 1,
+      "comp_count": 1,
+      "comps": [
+        "Quilboar - Smuggler"
+      ],
+      "tribes_seen": [
+        "Quilboar"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Mrglin' Burglar": {
+      "name": "Mrglin' Burglar",
+      "name_cn": "鱼人盗贼",
+      "tribe": "Murloc",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Murlocs - APM"
+      ],
+      "tribes_seen": [
+        "Murloc"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Mummifier": {
+      "name": "Mummifier",
+      "name_cn": "木乃伊师",
+      "tribe": "Undead",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Undead - Attack Scaling"
+      ],
+      "tribes_seen": [
+        "Undead"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Nightbane, Ignited": {
+      "name": "Nightbane, Ignited",
+      "name_cn": "夜之灾祸",
+      "tribe": "Undead",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Undead - Attack Scaling"
+      ],
+      "tribes_seen": [
+        "Undead"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Primitive Painter": {
+      "name": "Primitive Painter",
+      "name_cn": "原始画家",
+      "tribe": "Murloc",
+      "tier": 4,
+      "comp_count": 1,
+      "comps": [
+        "Murlocs - APM"
+      ],
+      "tribes_seen": [
+        "Murloc"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Proud Privateer": {
+      "name": "Proud Privateer",
+      "name_cn": "骄傲私掠者",
+      "tribe": "Pirate",
+      "tier": 8,
+      "comp_count": 1,
+      "comps": [
+        "Pirates - Bounty APM"
+      ],
+      "tribes_seen": [
+        "Pirate"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier"
+      ]
+    },
+    "Sewer Rat": {
+      "name": "Sewer Rat",
+      "name_cn": "下水道老鼠",
+      "tribe": "Beast",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Beasts - Summons"
+      ],
+      "tribes_seen": [
+        "Beast"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Sh牌": {
+      "name": "Sh牌",
+      "name_cn": null,
+      "tribe": "Naga",
+      "tier": 3,
+      "comp_count": 1,
+      "comps": [
+        "Nagas - Combat Scaling/Spell Buff"
+      ],
+      "tribes_seen": [
+        "Naga"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Sinrunner Blanchy": {
+      "name": "Sinrunner Blanchy",
+      "name_cn": "辛runner Blanchy",
+      "tribe": "Elemental",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Back to Back"
+      ],
+      "tribes_seen": [
+        "Elemental"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "spell_scaling"
+      ]
+    },
+    "Sky Admiral Rogers": {
+      "name": "Sky Admiral Rogers",
+      "name_cn": "天空上将罗杰斯",
+      "tribe": "Pirate",
+      "tier": 4,
+      "comp_count": 1,
+      "comps": [
+        "Pirates - Bounty APM"
+      ],
+      "tribes_seen": [
+        "Pirate"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Soul Rewinder": {
+      "name": "Soul Rewinder",
+      "name_cn": "灵魂回溯者",
+      "tribe": "Demon",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Demons - Shop Buff"
+      ],
+      "tribes_seen": [
+        "Demon"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Tarecgosa": {
+      "name": "Tarecgosa",
+      "name_cn": "塔雷贡萨",
+      "tribe": "Quilboar",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Quilboar - Smuggler"
+      ],
+      "tribes_seen": [
+        "Quilboar"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Tranquil Meditative": {
+      "name": "Tranquil Meditative",
+      "name_cn": "宁静冥想者",
+      "tribe": "Undead",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Undead - Attack Scaling"
+      ],
+      "tribes_seen": [
+        "Undead"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Twisted Wrathguard": {
+      "name": "Twisted Wrathguard",
+      "name_cn": "扭曲复仇守卫",
+      "tribe": "Demon",
+      "tier": 4,
+      "comp_count": 1,
+      "comps": [
+        "Demons - Shop Buff"
+      ],
+      "tribes_seen": [
+        "Demon"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Vinespeaker": {
+      "name": "Vinespeaker",
+      "name_cn": "藤蔓之声",
+      "tribe": "Quilboar",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Quilboar - Smuggler"
+      ],
+      "tribes_seen": [
+        "Quilboar"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "Wildfire Elemental": {
+      "name": "Wildfire Elemental",
+      "name_cn": "野火元素",
+      "tribe": "Elemental",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Elementals - Shop Buff/Spells"
+      ],
+      "tribes_seen": [
+        "Elemental"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "spell_scaling"
+      ]
+    },
+    "Wintergrasp Ghoul": {
+      "name": "Wintergrasp Ghoul",
+      "name_cn": "冬握亡灵",
+      "tribe": "Undead",
+      "tier": 0,
+      "comp_count": 1,
+      "comps": [
+        "Undead - Attack Scaling"
+      ],
+      "tribes_seen": [
+        "Undead"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "亡灵溢出流": {
+      "name": "亡灵溢出流",
+      "name_cn": null,
+      "tribe": "Undead",
+      "tier": 4,
+      "comp_count": 1,
+      "comps": [
+        "Undead - Overflow"
+      ],
+      "tribes_seen": [
+        "Undead"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "各种龙": {
+      "name": "各种龙",
+      "name_cn": null,
+      "tribe": "Dragon",
+      "tier": 2,
+      "comp_count": 1,
+      "comps": [
+        "Dragons - Spells"
+      ],
+      "tribes_seen": [
+        "Dragon"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "地狱火": {
+      "name": "地狱火",
+      "name_cn": null,
+      "tribe": "Naga",
+      "tier": 5,
+      "comp_count": 1,
+      "comps": [
+        "Nagas - Combat Scaling/Spell Buff"
+      ],
+      "tribes_seen": [
+        "Naga"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier"
+      ]
+    },
+    "娜迦+法术组合": {
+      "name": "娜迦+法术组合",
+      "name_cn": null,
+      "tribe": "Naga",
+      "tier": 4,
+      "comp_count": 1,
+      "comps": [
+        "Nagas - Groundbreaker"
+      ],
+      "tribes_seen": [
+        "Naga"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "战吼循环龙": {
+      "name": "战吼循环龙",
+      "name_cn": null,
+      "tribe": "Dragon",
+      "tier": 2,
+      "comp_count": 1,
+      "comps": [
+        "Dragons - Battlecries"
+      ],
+      "tribes_seen": [
+        "Dragon"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "法术配合": {
+      "name": "法术配合",
+      "name_cn": null,
+      "tribe": "Dragon",
+      "tier": 5,
+      "comp_count": 1,
+      "comps": [
+        "Dragons - Spells"
+      ],
+      "tribes_seen": [
+        "Dragon"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier"
+      ]
+    },
+    "溢出机制": {
+      "name": "溢出机制",
+      "name_cn": null,
+      "tribe": "Undead",
+      "tier": 1,
+      "comp_count": 1,
+      "comps": [
+        "Undead - Overflow"
+      ],
+      "tribes_seen": [
+        "Undead"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "猪猪战斗缩放": {
+      "name": "猪猪战斗缩放",
+      "name_cn": null,
+      "tribe": "Quilboar",
+      "tier": 3,
+      "comp_count": 1,
+      "comps": [
+        "Quilboar - Combat Scaling"
+      ],
+      "tribes_seen": [
+        "Quilboar"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    },
+    "血宝石相关": {
+      "name": "血宝石相关",
+      "name_cn": null,
+      "tribe": "Quilboar",
+      "tier": 5,
+      "comp_count": 1,
+      "comps": [
+        "Quilboar - Combat Scaling"
+      ],
+      "tribes_seen": [
+        "Quilboar"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier"
+      ]
+    },
+    "赤蟾": {
+      "name": "赤蟾",
+      "name_cn": null,
+      "tribe": "Dragon",
+      "tier": 7,
+      "comp_count": 1,
+      "comps": [
+        "Dragons - Shiny Ring"
+      ],
+      "tribes_seen": [
+        "Dragon"
+      ],
+      "tribe_diversity": 1,
+      "tags": [
+        "high_tier"
+      ]
+    },
+    "龙+战吼配合": {
+      "name": "龙+战吼配合",
+      "name_cn": null,
+      "tribe": "Dragon",
+      "tier": 4,
+      "comp_count": 1,
+      "comps": [
+        "Dragons - Battlecries"
+      ],
+      "tribes_seen": [
+        "Dragon"
+      ],
+      "tribe_diversity": 1,
+      "tags": []
+    }
+  }
+}
