@@ -1,0 +1,37 @@
+# Obsidian Notes Configuration
+
+# Application settings
+app:
+  name: "Obsidian Notes"
+  version: "1.0.0"
+  debug: false
+  log_level: "INFO"
+
+# Output settings
+output:
+  directory: "./outputs"
+  format: "markdown"
+  filename_template: "{date}_{title}"
+
+# Wiki sync settings
+wiki:
+  base_url: "http://localhost:8080"
+  username: ""
+  password: ""
+  sync_interval: 300  # seconds
+
+# Raw data settings  
+raw:
+  directory: "./raw"
+  file_pattern: "*.json"
+
+# Plugin settings
+plugins:
+  enabled: true
+  directory: "./plugins"
+  auto_load: true
+
+# Notification settings
+notifications:
+  enabled: true
+  email: "1157595693@qq.com"

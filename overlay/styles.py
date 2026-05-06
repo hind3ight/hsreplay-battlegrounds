@@ -1,0 +1,27 @@
+"""Overlay styles configuration."""
+
+# Window
+WINDOW_ALPHA = 0.92  # Transparency (0-1)
+WINDOW_WIDTH = 320
+WINDOW_HEIGHT = 480
+WINDOW_PADDING = 12
+
+# Colors
+BG_COLOR = "#1a1a2e"
+BG_SECONDARY = "#16213e"
+ACCENT = "#0f3460"
+ACCENT_HIGHLIGHT = "#e94560"
+TEXT_PRIMARY = "#eaeaea"
+TEXT_SECONDARY = "#a0a0a0"
+BORDER_COLOR = "#2d2d44"
+
+# Typography
+FONT_FAMILY = "Segoe UI"
+FONT_SIZE_TITLE = 14
+FONT_SIZE_NORMAL = 11
+FONT_SIZE_SMALL = 9
+
+# Layout
+ITEM_HEIGHT = 60
+ITEM_PADDING = 8
+CORNER_RADIUS = 8
