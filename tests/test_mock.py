@@ -158,13 +158,15 @@ def test_minions_metadata():
     print(f"[PASS] 随从元数据正常")
 
 def test_cross_comp_analyzer():
-    """测试跨阵容分析器"""
+    """测试跨阵容分析器（Go 模块，Windows 跳过）"""
     print("\n=== 测试 cmd/analyze-cross ===")
-    import subprocess
+    import shutil, subprocess
+    if shutil.which('go') is None:
+        print("[SKIP] 未找到 Go，跳过")
+        return
     result = subprocess.run(
         ['go', 'run', 'cmd/analyze-cross/main.go'],
-        capture_output=True, text=True,
-        cwd='/home/hind3ight/work/Projects/GoProjects/src/github.com/hind3ight/hsreplay-battlegrounds'
+        capture_output=True, text=True
     )
     if result.returncode == 0:
         lines = result.stdout.strip().split('\n')
