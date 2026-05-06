@@ -34,3 +34,6 @@ outputs/
 # Build outputs
 bin/
 *.exe
+cmd/**/__debug_bin*
+/debug_page.go
+/hsreplay-battlegrounds
