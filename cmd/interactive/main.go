@@ -12,6 +12,24 @@ import (
 	"time"
 )
 
+// resolveDataFile 尝试在多个位置查找 data/ 目录：
+// 1. 当前工作目录 (data/xxx)
+// 2. 可执行文件所在目录的 data/ (调试时从 bin/ 运行)
+// 3. 源码目录的 data/ (IDE 调试)
+func resolveDataFile(name string) (string, error) {
+	paths := []string{
+		name,                              // 相对 CWD
+		filepath.Join("..", name),         // 相对 bin/
+		filepath.Join("..", "..", name),   // 相对 cmd/interactive/
+	}
+	for _, p := range paths {
+		if _, err := os.Stat(p); err == nil {
+			return p, nil
+		}
+	}
+	return "", fmt.Errorf("file not found in any of: %v", paths)
+}
+
 type Card struct {
 	Name   string `json:"name"`
 	Tier   *int   `json:"tier"`
@@ -88,7 +106,11 @@ func extractTribe(compName string) string {
 }
 
 func loadData() (*Data, map[string]string, error) {
-	compsData, err := os.ReadFile("data/season13_comps.json")
+	compsFile, err := resolveDataFile("data/season13_comps.json")
+	if err != nil {
+		return nil, nil, err
+	}
+	compsData, err := os.ReadFile(compsFile)
 	if err != nil {
 		return nil, nil, err
 	}
@@ -98,12 +120,17 @@ func loadData() (*Data, map[string]string, error) {
 		return nil, nil, err
 	}
 
-	namesData, err := os.ReadFile("data/minion_names.json")
+	namesFile, err := resolveDataFile("data/minion_names.json")
 	var zhNames map[string]string
 	if err != nil {
 		zhNames = make(map[string]string)
 	} else {
-		json.Unmarshal(namesData, &zhNames)
+		namesData, err := os.ReadFile(namesFile)
+		if err != nil {
+			zhNames = make(map[string]string)
+		} else {
+			json.Unmarshal(namesData, &zhNames)
+		}
 	}
 
 	return &data, zhNames, nil

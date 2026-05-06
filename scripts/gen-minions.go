@@ -4,11 +4,30 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"path/filepath"
 	"sort"
 	"strings"
 
 	"github.com/hind3ight/hsreplay-battlegrounds/models"
 )
+
+// resolveDataFile 尝试在多个位置查找 data/ 目录：
+// 1. 当前工作目录 (data/xxx)
+// 2. 可执行文件所在目录的 data/ (调试时从 bin/ 运行)
+// 3. 源码目录的 data/ (IDE 调试)
+func resolveDataFile(name string) (string, error) {
+	paths := []string{
+		name,
+		filepath.Join("..", name),
+		filepath.Join("..", "..", name),
+	}
+	for _, p := range paths {
+		if _, err := os.Stat(p); err == nil {
+			return p, nil
+		}
+	}
+	return "", fmt.Errorf("file not found in any of: %v", paths)
+}
 
 func extractTribe(compName string) string {
 	nameLower := strings.ToLower(compName)
@@ -59,7 +78,12 @@ type MinionsMetadata struct {
 }
 
 func main() {
-	data, err := os.ReadFile("data/season13_comps.json")
+	dataFile, err := resolveDataFile("data/season13_comps.json")
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error finding data file: %v\n", err)
+		os.Exit(1)
+	}
+	data, err := os.ReadFile(dataFile)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error reading data file: %v\n", err)
 		os.Exit(1)

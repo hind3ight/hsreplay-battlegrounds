@@ -4,9 +4,28 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"path/filepath"
 	"sort"
 	"strings"
 )
+
+// resolveDataFile 尝试在多个位置查找 data/season13_comps.json：
+// 1. 当前工作目录 (data/season13_comps.json)
+// 2. 可执行文件所在目录的 data/ (调试时从 bin/ 运行)
+// 3. 源码目录的 data/ (IDE 调试)
+func resolveDataFile(name string) (string, error) {
+	paths := []string{
+		name,                              // 相对 CWD
+		filepath.Join("..", name),         // 相对 bin/
+		filepath.Join("..", "..", name),   // 相对 cmd/analyze/
+	}
+	for _, p := range paths {
+		if _, err := os.Stat(p); err == nil {
+			return p, nil
+		}
+	}
+	return "", fmt.Errorf("file not found in any of: %v", paths)
+}
 
 type Card struct {
 	Name   string `json:"name"`
@@ -72,7 +91,12 @@ func extractTribe(compName string) string {
 
 func main() {
 	// 加载数据
-	compsData, err := os.ReadFile("data/season13_comps.json")
+	compsFile, err := resolveDataFile("data/season13_comps.json")
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error finding data file: %v\n", err)
+		os.Exit(1)
+	}
+	compsData, err := os.ReadFile(compsFile)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error reading data file: %v\n", err)
 		os.Exit(1)
