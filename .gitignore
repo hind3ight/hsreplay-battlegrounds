@@ -32,3 +32,7 @@ outputs/
 *.png
 *.jpg
 *.gif
+
+# Build outputs
+bin/
+*.exe

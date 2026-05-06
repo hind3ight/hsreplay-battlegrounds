@@ -1,0 +1,79 @@
+# Default rules for HSReplay Battlegrounds Advisor
+
+rules:
+  - name: low_health_early
+    condition:
+      turn:
+        min: 1
+        max: 6
+      health_below: 15
+    message: "Low health early game - consider aggressive rerolls or pivoting"
+
+  - name: no_tribe_by_turn_6
+    condition:
+      turn: 6
+      tribe: null
+    message: "No clear tribe by turn 6 - consider committing to a comp soon"
+
+  - name: poor_economy_early
+    condition:
+      turn:
+        min: 3
+        max: 5
+      gold_below: 7
+    message: "Low gold on turns 3-5 - avoid excessive rerolls"
+
+  - name: high_health_early
+    condition:
+      turn:
+        min: 1
+        max: 4
+      health_above: 35
+    message: "High health early - can play greedily and scale"
+
+turn_warnings:
+  "6":
+    - "Turn 6: Consider if you should level or stay at current tier"
+  "8":
+    - "Turn 8: High value units available - evaluate your board strength"
+  "10":
+    - "Turn 10: Final push - ensure your key units are tripled"
+  "8-10":
+    - "Mid-game transition zone - pivot now if needed"
+
+comp_rules:
+  s_tier_warnings:
+    - "S-tier comps are harder to execute - ensure you have key pieces before committing"
+
+  by_name_pattern:
+    murloc:
+      - "Murlocs require multiple triples for full power"
+    demon:
+      - "Demons need proper economy setup - ensure you have Brann"
+    dragon:
+      - "Dragons scale with gold - prioritize Shiny Ring targets"
+    undead:
+      - "Undeads need reborns - prioritize Mummifier setups"
+    elemental:
+      - "Elementals need spell power scaling - prioritize Drakkari Enchanter"
+    quilboar:
+      - "Quilboar needs Brann for optimal APM - ensure economy supports it"
+    pirate:
+      - "Pirates require specific Bounty targets - know your win condition"
+    mech:
+      - "Mechs are stat-efficient but require tribe synergy for full power"
+
+difficulty_preference:
+  # Maps turn ranges to preferred difficulty levels
+  "1-6":
+    easy: 1.5
+    medium: 1.0
+    hard: 0.7
+  "7-10":
+    easy: 1.0
+    medium: 1.3
+    hard: 1.0
+  "11+":
+    easy: 0.7
+    medium: 1.0
+    hard: 1.5
